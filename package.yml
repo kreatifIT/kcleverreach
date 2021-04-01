@@ -1,0 +1,30 @@
+package: kcleverreach
+author: Kreatif GmbH
+version: '1.0.0'
+
+requires:
+    redaxo: ^5.8.0
+
+page:
+    title: CleverReach
+    block: system
+    prio: 30
+    icon: rex-icon fa-send
+    perm: cleverreach[]
+    subpages:
+        overview:
+            title: Übersicht
+            icon: rex-icon fa-info
+            perm: cleverreach[]
+#        date:
+#            title: Termine
+#            icon: rex-icon fa-calendar-o
+#            subPath: pages/data_edit.php
+#            yformTable: rex_event_date
+#            yformClass: rex_event_date
+#            perm: events[date]
+        settings:
+            title: 'translate:Settings'
+            icon: rex-icon fa-gear
+            itemclass: pull-right
+            perm: admin
